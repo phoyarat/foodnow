@@ -122,7 +122,7 @@ body {
   width: 60px;
   height: 60px;
   padding: 1rem;
-  background: #ff7936;
+  /* background: #ff7936; */
   display: flex;
   align-items: center;
   justify-content: center;
