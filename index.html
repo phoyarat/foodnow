@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -22,147 +23,44 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <!-- style/css -->
-    <link rel="stylesheet" href="style.css" />
-    <title>FOODNOW</title>
+    <link rel="stylesheet" href="login.css" />
+    <title>FOODNOW - สั่งอาหารง่าย ปลอดภัย สะดวก</title>
   </head>
   <body>
-    <header>
-    <h1 class="text-white d-flex justify-content-between align-items-center ">
-  <span>
-    <i class="fa-solid fa-location-dot me-2 fs-1"></i> 
-  <span class="text-white fs-7 ">วิทยาลัยเทคนิคขอนแก่น 67 ถ. ศรีจันทร์ ตำบลในเมือง</span>
-  </span>
-  <i class="fa-solid fa-bell fs-1"></i>
-    </h1>
-      <div class="input-group">
-        <span class="input-group-text bg-white border-end-0">
-          <i class="fa-solid fa-magnifying-glass text-primary"></i>
-        </span>
-        <input
-          class="form-control border-start-0 text-primary"
-          type="search"
-          placeholder="ค้นหาเมนู"
-          aria-label="Search"
-        />
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li class="mb-2"><a href="/login.html">เข้าสู่ระบบ</a></li>
+              <li><a href="register.html">สมัครสมาชิก</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="showcase">
+      <div class="container showcase-inner">
+        <div>
+          <img
+            src="./images/fast-delivery.png"
+            alt="use"
+            class="img-fluid w-75 mx-auto d-block user"
+          />
+        </div>
+        <br />
+
+        <div class="text-center text-white">
+          <h1 style="font-size: 50px">FOODNOW</h1>
+          <p class="fs-6">
+            สั่งอาหารง่าย ปลอดภัย ส่งถึงไว <br />
+            ไม่พลาดของอร่อยใกล้บ้านคุณ!
+          </p>
+        </div>
       </div>
     </header>
-    <!-- เมนู -->
-    <nav class="navbar fixed-bottom navbar-light bg-white">
-      <div class="container-fluid d-flex justify-content-around text-center">
-        <div class="menu-item text-primary">
-          <i class="fa-solid fa-house fa-lg icon-menu"></i>
-          <div class="small">หน้าแรก</div>
-        </div>
-        <div class="menu-item">
-          <i class="fa-solid fa-magnifying-glass fa-lg icon-menu"></i>
-          <div class="small">ค้นหา</div>
-        </div>
-        <div class="menu-item">
-          <i class="fa-solid fa-cart-shopping fa-lg icon-menu"></i>
-          <div class="small">สั่งซื้อ</div>
-        </div>
-        <div class="menu-item">
-          <i class="fa-solid fa-user fa-lg icon-menu"></i>
-          <div class="small">โปรไฟล์</div>
-        </div>
-      </div>
-    </nav>
-    <!-- เนื้อหา -->
-    <section>
-        <!-- หมวดหมู่ยอดนิยม -->
-      <div class="row hot-menu">
-        <div class="col-12 mb-2">
-          <div class="d-flex justify-content-between align-items-center">
-            <h2 class="mb-0">หมวดหมู่ยอดนิยม</h2>
-            <i class="fa-solid fa-circle-chevron-right text-primary"></i>
-          </div>
-        </div>
-        <div class="col-3 text-center">
-          <img src="./images/ramen.png" alt="ก๋วยเตี๋ยว" />
-          <div class="small">ก๋วยเตี๋ยว</div>
-        </div>
-        <div class="col-3 text-center">
-          <img src="./images/steak.png" alt="สเต๊ก" />
-          <div class="small">สเต๊ก</div>
-        </div>
-        <div class="col-3 text-center">
-          <img src="./images/fried-chicken.png" alt="ไก่ทอด" />
-          <div class="small">ไก่ทอด</div>
-        </div>
-        <div class="col-3 text-center">
-          <img src="./images/fruit.png" alt="ผลไม้" />
-          <div class="small">ผลไม้</div>
-        </div>
-      </div>
-    </section>
-    <section>
-        <!-- เมนูแนะนำ -->
-      <div class="row recomment">
-        <div class="col-12 mb-2">
-          <div class="d-flex justify-content-between align-items-center">
-            <h2 class="mb-0">เมนูที่แนะนำ</h2>
-            <i class="fa-solid fa-circle-chevron-right text-primary"></i>
-          </div>
-        </div>
-        <div class="col-4 text-center">
-          <a href="/menu.html"><img src="./images/bamee.jpg" alt="บะหมี่หมูกรอบ" class="menu-image"/></a>
-          <div class="small">บะหมี่หมูกรอบ</div>
-           <div class="small text-secondary font-weight-light ">฿60</div>
-        </div>
-        <div class="col-4 text-center">
-          <img src="./images/ricerode.jpg" alt="ข้าวซอย" class="menu-image" />
-          <div class="small">ข้าวซอย</div>
-           <div class="small text-secondary font-weight-light ">฿60</div>
-        </div>
-        <div class="col-4 text-center">
-          <img src="./images/latea.jpg" alt="ชานม"class="menu-image" />
-          <div class="small">ชานม</div>
-           <div class="small text-secondary font-weight-light ">฿60</div>
-        </div>
-      </div>
-  </section>
-    <section>
-        <!-- เมนูที่เคยสั่ง -->
-      <div class="row recomment">
-        <div class="col-12 mb-2">
-          <div class="d-flex justify-content-between align-items-center">
-            <h2 class="mb-0">เมนูที่เคยสั่ง</h2>
-            <i class="fa-solid fa-circle-chevron-right text-primary"></i>
-          </div>
-        </div>
-        <div class="col-4 text-center">
-          <img src="./images/setkung.jpg" alt="เซ็ตกุ้งดอง" class="menu-image"/>
-          <div class="small">เซ็ตกุ้งดอง</div>
-           <div class="small text-secondary font-weight-light ">฿60</div>
-        </div>
-        <div class="col-4 text-center">
-          <img src="./images/cake.jpg" alt="เค้ก" class="menu-image" />
-          <div class="small">เค้ก</div>
-           <div class="small text-secondary font-weight-light ">฿60</div>
-        </div>
-        <div class="col-4 text-center">
-          <img src="./images/bingsu.jpg" alt="บิงซู"class="menu-image" />
-          <div class="small">บิงซู</div>
-           <div class="small text-secondary font-weight-light ">฿60</div>
-        </div>
-      </div>
-  </section>
-  <hr>
-<section>
-        <!-- เมนูที่เคยสั่ง -->
-      <div class="row span-box  ">
-          <div class="col random-menu-box text-start" style="margin-right: 12px;">
-            <div class="small">อาหารตามสุ่ม</div>
-            <div class="small text-secondary font-weight-light">สุ่มเลย!
-            <img src="/images/fortune-wheel 1.png" alt="location" class="ms-5"></div>
-          </div>
-          <div class="col random-menu-box text-start">
-            <div class="small">ใกล้ฉัน</div>
-            <div class="small text-secondary font-weight-light">สั่งเลย!
-            <img src="/images/location 1.png" alt="location" class="ms-4"></div>
-            <div class="bot"><img src="/images/assistant 1.png" alt="bot"></div>
-          </div>
-      </div>
-  </section>
   </body>
 </html>
