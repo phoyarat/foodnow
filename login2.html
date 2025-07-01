@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- style/css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>FOODNOW - สั่งอาหารง่าย ปลอดภัย สะดวก</title>
+  </head>
+  <body>
+    <div class="login">
+      <div>
+        <i
+          class="fa-solid fa-arrow-left text-white px-3 pt-3"
+          onclick="window.location.href='/login1.html'"
+          style="font-size: 20px"
+        ></i>
+      </div>
+      <div>
+        <img
+          src="/images/log-in (1).png"
+          alt="use"
+          class="img-fluid w-50 mx-auto d-block mt-5 user"
+        />
+      </div>
+      <br />
+      <div class="text-center text-white">
+        <h1 class="fw-bold" style="font-size: 40px">FOODNOW</h1>
+        <p class="fs-6">
+          สั่งอาหารง่าย ปลอดภัย ส่งถึงไว <br />
+          ไม่พลาดของอร่อยใกล้บ้านคุณ!
+        </p>
+      </div>
+      <!-- ปุ่ม login -->
+      <!-- ส่วนฟอร์ม Login -->
+      <div class="bottom-section px-3 mt-3" style="margin-top: 100px">
+        <!-- ช่องกรอกชื่อผู้ใช้ -->
+        <h3 class="text-center mb-3 text-primary fw-bold">ลงทะเบียน</h3>
+        <br />
+        <input
+          type="text"
+          class="form-control rounded-pill shadow-sm mb-3 py-3 text-center"
+          placeholder="ชื่อผู้เข้าใช้งาน"
+        />
+
+        <!-- ช่องกรอกรหัสผ่าน -->
+        <input
+          type="password"
+          class="form-control rounded-pill shadow-sm mb-3 py-3 text-center"
+          placeholder="รหัสผ่าน"
+        />
+        <br />
+        <!-- ปุ่มเข้าสู่ระบบ -->
+        <button
+          type="button"
+          class="btn w-100 rounded-pill shadow text-white fs-5 py-3 mb-3"
+          style="background: linear-gradient(360deg, #ff5b09, #fca62f)"
+          onclick="showSuccessAndRedirect()"
+        >
+          ลงทะเบียน
+        </button>
+        <div id="success-overlay">
+          <img
+            src="./images/checked.png"
+            alt="Success"
+            class="success-image"
+          />
+        </div>
+        <script>
+          function showSuccessAndRedirect() {
+            const overlay = document.getElementById("success-overlay");
+            overlay.style.display = "flex"; // โชว์ overlay
+
+            setTimeout(() => {
+              window.location.href = "/"; // ไปหน้า /
+            }, 1000); // 1 วินาที
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
