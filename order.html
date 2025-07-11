@@ -26,6 +26,7 @@
     <title>FOODNOW</title>
   </head>
   <body>
+    <!-- ยืนยันคำสั่งซื้อ -->
     <header>
       <div class="mb-2">
         <i
@@ -36,7 +37,7 @@
         <span class="text-white fs-1">ยืนยันคำสั่งซื้อ</span>
       </div>
     </header>
-
+<!-- จัดส่ง/รับที่ร้าน -->
     <div class="d-flex text-center">
       <div
         class="flex-fill text-primary fs-3 py-1"
@@ -46,6 +47,7 @@
       </div>
       <div class="flex-fill fs-3 py-1">รับที่ร้าน</div>
     </div>
+    <!-- ที่จัดส่ง/เวลาส่ง -->
     <section style="background-color: #d9d9d9">
       <div class="bg-white text-start pb-1 mb-2" style="border-radius: 10px">
         <div class="p-2">
@@ -63,22 +65,22 @@
           ตัวเลือกการจัดส่ง
         </div>
         <div class="card m-2">
-          <div class="card-body d-flex">ส่งไว • < 20 นาที
+          <div class="card-body py-2 px-3 d-flex" style="font-size: 0.85rem;">ส่งไว • < 20 นาที
             <span class="ms-auto">23</span ></div>
         </div>
         <div class="card m-2">
-          <div class="card-body d-flex">มาตรฐาน •  20 นาที
+          <div class="card-body py-2 px-3 d-flex" style="font-size: 0.85rem;">มาตรฐาน •  20 นาที
             <span class="ms-auto">14</span ></div>
         </div>
         <div class="card m-2">
-          <div class="card-body d-flex">ส่งแบบประหยัด •  30 นาที
+          <div class="card-body py-2 px-3 d-flex" style="font-size: 0.85rem;">ส่งแบบประหยัด •  30 นาที
             <span class="ms-auto">10</span ></div>
         </div>
         <div class="card m-2">
-          <div class="card-body d-flex">สั่งล่วงหน้า</div>
+          <div class="card-body py-2 px-3 d-flex" style="font-size: 0.85rem;">สั่งล่วงหน้า</div>
         </div>
       </div>
-      <!--  -->
+      <!-- ก๋วยเตี๋ยวนายคิม/รูป/ข้อความ -->
       <div class="bg-white text-start" style="border-radius: 10px">
         <div class="p-2 d-flex justify-content-between align-items-center">
           <div class="fw-bold">
@@ -117,19 +119,53 @@
           <div class="small font-weight-light">฿69</div>
         </div>
       </div>
-      <br>
-      <div class="bg-white text-start" style="border-radius: 10px">
+
+      <!-- ส่วนลด -->
+      <div class="bg-white text-start mt-2" style="border-radius: 10px">
         <div class="p-2 d-flex justify-content-between align-items-center">
           <div>
             <i class="fa-solid fa-ticket text-primary"></i><span class="ms-2">
             โค้ดส่วนลด</span>
           </div>
-          <div class="small font-weight-light   text-center" 
+          <div class="align-items-center">
+          <span class="small font-weight-light text-center me-1" 
           style="background-color: #fe8b3e88; padding: 2px 6px; border-radius: 10px;">
             โค้ดส่งฟรี
+          </span>
+          <i class="fa-solid fa-chevron-right" style="color: #efefef;"></i>
+          </div>
+         </div>
+      </div>
+      <!-- ช่องทางการชำระเงิน -->
+      <div class="bg-white text-start mt-2 p-2 " style="border-radius: 12px;">
+  <div class="d-flex justify-content-between align-items-center fw-bold">
+    <span>ช่องทางการชำระเงิน</span>
+    <span class="d-flex align-items-center">
+      <span class="small text-secondary fw-normal me-2">ดูทั้งหมด</span>
+      <i class="fa-solid fa-chevron-right" style="color: #efefef;"></i>
+    </span>
+  </div>
+        <div class="p-1 d-flex justify-content-between align-items-center">
+          <div>
+            <i class="fa-solid fa-coins" style="color: #ff671b;"></i>
+            <span class="ms-2">เงินสด</span>
           </div>
         </div>
-          </div>
+      </div>
     </section>
+    <!--รวมทั้งหมด ฿95 -->
+<div class="d-flex justify-content-between align-items-center p-1">
+  <span class="ms-4">รวมทั้งหมด</span>
+  <span class="me-4">฿95</span>
+</div>
+<!-- ปุ่ม คำสั่งซื้อ -->
+<div class="px-4">
+  <button type="button" class="btn btn-light w-100 rounded-pill py-2 "
+    onclick="window.location.href='/home.html'"
+    style="background-color: #FF671B; color: white; font-weight: bold; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+    คำสั่งซื้อ
+  </button>
+</div>
+
   </body>
 </html>
